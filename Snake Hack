@@ -1,0 +1,7 @@
+This i one of the more basic hacks around and really simple to set up! There is a youtube link if you wanna use it instead.
+Start by doing Ctrl+shift+O then you should be in your book marks manager,
+right click/use 2 fingers on an open space and tap "create new bookmark" and then on the name put it to somthing you will remember and for the url paste in this code:
+
+javascript: req = new XMLHttpRequest(); req.open('GET', 'https://raw.githubusercontent.com/DarkSnakeGang/GoogleSnakeCustomMenuStuff/main/custom.js'); req.onload = function() { eval(this.responseText + 'snake.more_menu();'); }; req.send();
+
+then click save and then open snake go to the bookmark click it, load up snake, and there you go!
