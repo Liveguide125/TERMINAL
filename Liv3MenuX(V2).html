@@ -51,6 +51,25 @@ function gcloak() { var link = document.querySelector("link[rel*='icon']") || do
 
 //bad scripts
 
+
+<script>
+function StumbleTUT()
+{
+	window.alert("to use stumble guys 1st open a proxy (prolly use instealler) then search stumble guys online in the proxy, click first link. And BOOM thats it.")
+}
+</script>
+
+
+<script>
+function newPROXLesGo()
+{
+	window.alert("loading...")
+	window.alert("done!")
+	window.open("https://juniorlol.uk.to/")
+}
+</script>
+
+
 <script>
 function PANIC()
 {
@@ -108,6 +127,16 @@ function EXTC()
 //end of bad scripts
 
 <script>
+function mineCRAFT()
+{
+	window.alert("to use new minecraft you need to go to next window.alert(click enter)")
+	window.alert("you are gonna be re directed to the minecraft download when you get there click View raw then CTRL+S then rename the file EXACTLY MC.html after doing this come back here for more instructions")
+	window.open("https://github.com/hozzywozzy/eagler-craft-archive/blob/main/index.html")
+	window.alert("if you did the steps corectly you should have new minecraft, have fun!")
+}
+</script>
+
+<script>
 function StartMsg()
 {
 	window.alert("Hello welcome to menu X!")
@@ -144,6 +173,24 @@ function KA() {
 }
 </script>
 
+<script>
+function CoinMGR()
+{
+	var coinText = document.getElementById("coins");
+	var coins = parseInt(localStorage.getItem("coins")) || 200;
+	
+	// Add 200 coins every 24 hours
+	setInterval(function() {
+		coins += 200;
+		coinText.textContent = "Amount Of Coins You Have: " + coins;
+		localStorage.setItem("coins", coins);
+	}, 24 * 60 * 60 * 1000);
+}
+</script>
+<element onload="CoinMGR()">
+
+
+
         <script>
         function create() {
             var url = "https://k12maths.org/";
@@ -179,10 +226,9 @@ function KA() {
 
 <center style="color:grey">Creds:Liv3</center>
 
-<center style="color:grey">Version 1.1</center>
+<center style="color:grey">Version 2</center>
 
-<h1 style="color:powderblue">Hello and welcome to Menu X V1.1! This update is mainly just bug fixes and a new proxy cloak. Want Something Added? Just ask me and it will probably get in!</h1>
-
+<h1 style="color:powderblue">Hello and welcome to Menu X V2! This update brings a new proxy, private methods and public methods!! and new minecraft, (this also means stumble guys!)</h1>
 <p>//</p>
 
 <p>//</p>
@@ -206,6 +252,10 @@ function KA() {
 		  <p>//</p>
 		  
 		  <button onclick='create2()'>proxy (kazwire)</button>
+		  
+		  <p>//</p>
+		  
+		  <button onclick="newPROXLesGo()">Instealler(NEW)</button>
 		  
 		  
 		  <h1 style="color:green">ADV bookmarks (BOOKMARKLETS BROKEN! WORKING ON FIX!!!)</h1>
@@ -254,7 +304,32 @@ function KA() {
 
 <p>//</p>
 
-<h1 style="color:blue">Shop! (COMING SOON)</h1>
+<h1 style="color:blue">Shop! (NOT WORKING!!)</h1>
+
+<p id="coins" style="color:red">Amount Of Coins You Have: 200</p>
+
+<p>//</p>
+
+<h1 style="color:cyan">PRIVATE METHODS!</h1>
+
+<button onclick="geoTUT()">GEOGEBRA</button>
+
+<button onclick="gitlabTUT()">GITLAB</button>
+
+<p>//</p>
+
+<b style="color:white">more soon!</b>
+
+
+<h1 style="color:cyan">Public Methods</h1>
+
+<button onclick="StumbleTUT()">STUMBLE GUYS</button>
+
+<p>//</p>
+
+<button onclick="mineCRAFT()">NEW MINECRAFT!</button>
+
+
 
 </body>
 
