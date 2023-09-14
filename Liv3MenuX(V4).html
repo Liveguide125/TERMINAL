@@ -44,62 +44,41 @@
 <title>MenuX</title>
 
 
-
-    <style>
-      body {
-        background-color: #f2f2f2;
-        font-family: 'Tahoma', sans-serif;
-      }
-      
-      section {
-        border: 1px solid #ccc;
-        padding: 10px;
-        box-shadow: 2px 2px 5px #ccc;
-      }
-      
-      button:hover {
-        background-color: #333;
-        color: #fff;
-      }
-      
-      body {
-        background: linear-gradient(to bottom, #f2f2f2, #ccc);
-      }
-      
-      @media (max-width: 768px) {
-        section {
-          width: 100%;
-        }
-      }
-    </style>
-
 <script>
-      function changeBackground() {
-        // Get the file input element
-        const fileInput = document.querySelector('input[type="file"]');
+function changeBackground() {
+  // Get the file input element
+  const fileInput = document.querySelector('input[type="file"]');
 
-        // Add a change event listener to the file input element
-        fileInput.addEventListener('change', () => {
-          // Get the selected file
-          const file = fileInput.files[0];
+  // Add a change event listener to the file input element
+  fileInput.addEventListener('change', () => {
+    // Get the selected file
+    const file = fileInput.files[0];
 
-          // Create a new FileReader
-          const reader = new FileReader();
+    // Create a new FileReader
+    const reader = new FileReader();
 
-          // Set the onload function for the FileReader
-          reader.onload = () => {
-            // Set the background of the HTML to the selected image
-            document.body.style.backgroundImage = `url(${reader.result})`;
-          };
+    // Set the onload function for the FileReader
+    reader.onload = () => {
+      // Store the selected image in local storage
+      localStorage.setItem('backgroundImage', reader.result);
+      // Set the background of the HTML to the selected image
+      document.body.style.backgroundImage = `url(${reader.result})`;
+    };
 
-          // Read the selected file as a data URL
-          reader.readAsDataURL(file);
-        });
+    // Read the selected file as a data URL
+    reader.readAsDataURL(file);
+  });
 
-        // Trigger the file input element
-        fileInput.click();
-      }
-    </script>
+  // Trigger the file input element
+  fileInput.click();
+}
+
+// Set the background on page load
+const backgroundImage = localStorage.getItem('backgroundImage');
+if (backgroundImage) {
+  document.body.style.backgroundImage = `url(${backgroundImage})`;
+}	
+</script>
 
 <script>
 function gcloak() { var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://jenks.instructure.com/favicon.ico';document.title = 'Dashboard';console.log(document.title);document.getElementsByTagName('head')[0].appendChild(link) };gcloak();setInterval(gcloak, 1000);
@@ -133,38 +112,9 @@ function PROXARC() {
 </script>
 
 
-//bad scripts
+<!-- bad scripts -->
 
 
-<script>
-function git()
-{
-	var mk = "1112"
-	var kkl = "this is the password: 91821"
-	
-	//mk is not pass its just place holder
-	
-	window.alert("loaing scan...")
-	window.alert("loaded!")
-	var prompt = window.prompt("please enter ID!")
-	
-	if(prompt === mk)
-	{
-		window.alert("Correct loading method...")
-		window.alert("there is only one gitlab game i can get as of now...")
-		window.alert("loading game...")
-		var link = "http://drifthunters.gitlab.io/";
-		window.open(link, "_blank");
-		
-	}
-	else
-	{
-		window.alert("Wrong! Closing...")
-	}
-	
-	
-}
-</script>
 
 
 <script>
@@ -247,7 +197,7 @@ function EXTC()
 }
 </script>
 
-//end of bad scripts
+<!-- end of bad scripts -->
 
 <script>
 function mineCRAFT()
@@ -263,37 +213,36 @@ function mineCRAFT()
 
 
 <script>
-function KA() {
-  // Get the text field
-  var copyText = document.getElementById("KA");
-
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
-
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
-  
-  // Alert the copied text
-  alert("Copied the text: " + copyText.value);
+function OwnProx()
+{
+	window.alert("for only 1-2 dollars, you cant get your own proxy of any brand, custom name and much more! (i CAN give out free ones sometimes.)")
 }
 </script>
 
 <script>
-function CoinMGR()
+function AdMenu()
 {
-	var coinText = document.getElementById("coins");
-	var coins = parseInt(localStorage.getItem("coins")) || 200;
-	
-	// Add 200 coins every 24 hours
-	setInterval(function() {
-		coins += 200;
-		coinText.textContent = "Amount Of Coins You Have: " + coins;
-		localStorage.setItem("coins", coins);
-	}, 24 * 60 * 60 * 1000);
+	window.alert("for only 2-3 dollars you can get a ADMIN MENU, this comes with op features and much more (CURRENTLY NOT OUT YET AND WILL START DEVEOLPMENT SOON!)")
 }
 </script>
-<element onload="CoinMGR()">
+
+<script>
+function DISCSTAT() {
+  var url = "https://raw.githubusercontent.com/Liveguide125/TERMINAL/main/ChatStatus.txt";
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      window.alert("Loading status...");
+      return response.text();
+    })
+    .then(data => {
+      window.alert("CHAT STATUS = " + data);
+    })
+    .catch(error => window.alert(error));
+}
+</script>
 
 
 
@@ -316,9 +265,9 @@ function jsRun()
 
 <center style="color:grey">Creds:Liv3</center>
 
-<center style="color:grey">Version 3.5</center>
+<center style="color:grey">Version 4</center>
 
-<h1 style="color:powderblue">Hello and welcome to Menu X V3.5! This update brings a new settings page which makes you able to change the background! (GIVE ME IDEAS PLSPLSPSLPSLP)</h1>
+<h1 style="color:powderblue">Hello and welcome to Menu X V4! This update brings a settings header, shop fixed, *kinda* and a new Chat Network Checker (Lets you see if chat systems are online or not)</h1>
 
 <p>‎ ‎ </p>
 
@@ -327,7 +276,6 @@ function jsRun()
 </head>
 
 <body>
-<body style="background-color:black;"></body>
 
 <h1 style="color:blue">Proxys! cloaks got patched :(  (atleast a little bit)</h1>
 
@@ -343,6 +291,10 @@ function jsRun()
 		  <p>‎ ‎ </p>
 		  
 		  <button onclick="newPROXLesGo()">Instealler(NEW)</button>
+		  
+		  <p>‎ ‎ </p>
+		  
+		  <button onclick="window.open('https://liveware.onrender.com/', '_blank')">Open Velocity (NEW MADE BY ME)</button>
 		  
 		  
 		  <h1 style="color:green">ADV bookmarks (BOOKMARKLETS BROKEN! WORKING ON FIX!!!)</h1>
@@ -365,6 +317,8 @@ function jsRun()
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
 
 <p>‎ ‎ </p>
+
+<button onclick="DISCSTAT()">Chat Status (CLICK IF CHATS ARE NOT WORKING!!!)</button>
 
 <p>‎ ‎ </p>
 
@@ -398,9 +352,11 @@ function jsRun()
 
 <p>‎ ‎ </p>
 
-<h1 style="color:blue">Shop! (NOT WORKING!!)</h1>
+<h1 style="color:blue">Shop!</h1>
 
-<p id="coins" style="color:red">Amount Of Coins You Have: 200</p>
+<button onclick="OwnProx()">Proxy</button>
+
+<button onclick="AdMenu()">Admin Menu (OP)</button>
 
 <p>‎ ‎ </p>
 
