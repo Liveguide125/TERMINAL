@@ -43,6 +43,64 @@
 
 <title>MenuX</title>
 
+
+
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: 'Tahoma', sans-serif;
+      }
+      
+      section {
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 2px 2px 5px #ccc;
+      }
+      
+      button:hover {
+        background-color: #333;
+        color: #fff;
+      }
+      
+      body {
+        background: linear-gradient(to bottom, #f2f2f2, #ccc);
+      }
+      
+      @media (max-width: 768px) {
+        section {
+          width: 100%;
+        }
+      }
+    </style>
+
+<script>
+      function changeBackground() {
+        // Get the file input element
+        const fileInput = document.querySelector('input[type="file"]');
+
+        // Add a change event listener to the file input element
+        fileInput.addEventListener('change', () => {
+          // Get the selected file
+          const file = fileInput.files[0];
+
+          // Create a new FileReader
+          const reader = new FileReader();
+
+          // Set the onload function for the FileReader
+          reader.onload = () => {
+            // Set the background of the HTML to the selected image
+            document.body.style.backgroundImage = `url(${reader.result})`;
+          };
+
+          // Read the selected file as a data URL
+          reader.readAsDataURL(file);
+        });
+
+        // Trigger the file input element
+        fileInput.click();
+      }
+    </script>
+
 <script>
 function gcloak() { var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://jenks.instructure.com/favicon.ico';document.title = 'Dashboard';console.log(document.title);document.getElementsByTagName('head')[0].appendChild(link) };gcloak();setInterval(gcloak, 1000);
 </script>
@@ -258,13 +316,13 @@ function jsRun()
 
 <center style="color:grey">Creds:Liv3</center>
 
-<center style="color:grey">Version 3</center>
+<center style="color:grey">Version 3.5</center>
 
-<h1 style="color:powderblue">Hello and welcome to Menu X V3! This update brings a proxy searcher, a site cloaker, new proxy (grayware) Thats about it (TELL ME IDEAS IN THE CHAT AND THE WILL MOST LIKELY BE ADDED)</h1>
+<h1 style="color:powderblue">Hello and welcome to Menu X V3.5! This update brings a new settings page which makes you able to change the background! (GIVE ME IDEAS PLSPLSPSLPSLP)</h1>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
 </head>
 
@@ -275,14 +333,14 @@ function jsRun()
 
 
 
-<p>//</p>
+<p>‎ ‎ </p>
 
 		  
-		  <p>//</p>
+		  <p>‎ ‎ </p>
 		  
 		  <button onclick='create2()'>proxy (kazwire)</button>
 		  
-		  <p>//</p>
+		  <p>‎ ‎ </p>
 		  
 		  <button onclick="newPROXLesGo()">Instealler(NEW)</button>
 		  
@@ -294,9 +352,9 @@ function jsRun()
 <h1 style="color:red">CHATING AND VC CALLS(FINNALY WORKS!!)</h1>
 
 
-<p>//</p>
+<p>‎ ‎ </p>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
 <widgetbot
     server="1143751155835478117"
@@ -306,29 +364,29 @@ function jsRun()
 ></widgetbot>
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
 <h1 style="color:red">PROXY ARCHIVE SEARCH</h1>
 
 <button onclick="PROXARC()">Proxy Archive Search (BETA)</button>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
 <h1 style="color:red">(!WARNING! THE FOLLOWING STUFF BELLOW THIS HEADER AND UNTIL THE NEXT HEADER IS VERY DETECABLE STUFF AND SHOULD ONLY BE USED IF YOU HAVE AN EXCUSE OR BETTER REASON) EXT confuser</h1>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
 <button onclick='EXTC()'>EXTC</button>
 
@@ -336,15 +394,15 @@ function jsRun()
 
 <button onclick='PANIC()'>PANIC USE IF TEACHER IS NEAR AND DONT KNOW WHAT TO DO!</button>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
 <h1 style="color:blue">Shop! (NOT WORKING!!)</h1>
 
 <p id="coins" style="color:red">Amount Of Coins You Have: 200</p>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
 <b style="color:white">more soon!</b>
 
@@ -353,19 +411,26 @@ function jsRun()
 
 <button onclick="StumbleTUT()">STUMBLE GUYS</button>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
 <button onclick="mineCRAFT()">NEW MINECRAFT!</button>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
 <button onclick="jsRun()">BookMark Runner (mostly for cloaks)</button>
 
-<p>//</p>
+<p>‎ ‎ </p>
 
 <button onclick="cloak()">Cloaker</button>
 
+<p>‎ ‎ </p>
 
+<p>‎ ‎ </p>
+
+<h1 style="color:powderblue">Settings</h1>
+
+    <button onclick="changeBackground()">change background</button>
+    <input type="file" style="display: none;">
 
 </body>
 
