@@ -124,10 +124,12 @@ function changeBackground() {
 }
 
 // Set the background on page load
-const backgroundImage = localStorage.getItem('backgroundImage');
-if (backgroundImage) {
-  document.body.style.backgroundImage = `url(${backgroundImage})`;
-}	
+window.addEventListener('load', () => {
+  const backgroundImage = localStorage.getItem('backgroundImage');
+  if (backgroundImage) {
+    document.body.style.backgroundImage = `url(${backgroundImage})`;
+  }
+});
 </script>
 
 <script>
@@ -312,6 +314,8 @@ function jsRun()
 </script>
 
 <head>
+
+
 
 <center style="color:grey">Creds:Liv3, GREYWARE LLC</center>
 
